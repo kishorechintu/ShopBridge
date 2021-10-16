@@ -50,6 +50,7 @@ export class ListOfProductsComponent implements OnInit {
 }
 
   closeSearch() {
+    this.searchText = '';
     this.productsList = Object.assign([], this.globalProduct);
   }
 }

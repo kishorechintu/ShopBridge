@@ -36,16 +36,16 @@
     {
       "name": "Nikon Camera",
       "category": "Gadgets",
-      "price": "95000",
+      "price": "35000",
       "description": "The great camera, with descent lens and latest technology",
       "id": 1634384140215
     },
     {
-      "id": 1634393001602,
       "name": "Watch",
       "category": "Gadgets",
-      "price": "3000",
-      "description": "Its new watch"
+      "price": "5000",
+      "description": "Its new watch",
+      "id": 1634393001602
     },
     {
       "id": 1634393127600,
