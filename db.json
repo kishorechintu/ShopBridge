@@ -13,11 +13,11 @@
   ],
   "products": [
     {
-      "id": 1634378369659,
       "name": "Samsung Tv",
       "category": "Electronics",
-      "price": "39999",
-      "description": "Nice Tv"
+      "price": "50000",
+      "description": "Nice Tv",
+      "id": 1634378369659
     },
     {
       "id": 1634382594178,
@@ -34,11 +34,25 @@
       "description": "The table is made of Take wood, with mat-finish."
     },
     {
-      "id": 1634384140215,
       "name": "Nikon Camera",
       "category": "Gadgets",
-      "price": "78000",
-      "description": "The great camera, with descent lens and latest technology"
+      "price": "95000",
+      "description": "The great camera, with descent lens and latest technology",
+      "id": 1634384140215
+    },
+    {
+      "id": 1634393001602,
+      "name": "Watch",
+      "category": "Gadgets",
+      "price": "3000",
+      "description": "Its new watch"
+    },
+    {
+      "id": 1634393127600,
+      "name": "New ",
+      "category": "Electronics",
+      "price": "32222",
+      "description": "New Product"
     }
   ]
 }

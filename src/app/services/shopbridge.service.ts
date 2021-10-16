@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { PRODUCT_MODEL } from '../model';
@@ -36,13 +36,16 @@ export class ShopbridgeService {
   }
 
   editProduct(id, name, price, category, description) {
+    let header = new HttpHeaders({
+      'Access-Control-Allow-Origin': 'localhost:3000'
+    });
     let body = {
       name: name,
       category: category,
       price: price,
       description: description,
     };
-    return this.httpClient.patch(`${HOST_ADDRESS}/products/${id}`, body);
+    return this.httpClient.put(`${HOST_ADDRESS}/products/${id}`, body, {headers: header});
   }
 
   deleteProduct(id: string) {
