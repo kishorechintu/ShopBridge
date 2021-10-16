@@ -1,0 +1,34 @@
+<div class="search-container">
+  <div class="d-flex">
+    <input
+      class="form-control me-2"
+      [(ngModel)]="searchText"
+      type="search"
+      placeholder="Search product by name ..."
+      aria-label="Search"
+    />
+    <div class="btn btn-group">
+      <button
+        class="btn btn-outline-success"
+        (click)="searchProduct()"
+        type="submit"
+      >
+        Search
+      </button>
+      <button
+        *ngIf="productsList.length !== globalProduct.length"
+        class="btn btn-outline-danger"
+        (click)="closeSearch()"
+        type="button"
+      >
+        X
+      </button>
+    </div>
+  </div>
+</div>
+
+<app-product-item
+  [productsList]="productsList"
+  (deleteEvent)="deleteProduct($event)"
+  (editEvent)="editProduct($event)"
+></app-product-item>

@@ -1,0 +1,26 @@
+.additem-wrapper {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.alert {
+  margin: 10px;
+}
+
+mat-card {
+  width: 500px;
+}
+
+.mat-card-title {
+  margin-bottom: 20px;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+.add-button {
+  text-align: center;
+}

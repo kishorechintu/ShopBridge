@@ -1,0 +1,15 @@
+.search-container {
+  display: flex;
+  justify-content: center;
+}
+
+.d-flex {
+  width: 50%;
+  margin: 10px;
+}
+
+@media (max-width: 800px) {
+  .d-flex {
+    width: 100%;
+  }
+}

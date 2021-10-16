@@ -1,0 +1,62 @@
+
+<div *ngIf="productAddState" class="alert alert-success" role="alert">
+  Product added successfully
+</div>
+<div class="additem-wrapper">
+  
+  <div class="additem-card">
+    <mat-card>
+      <mat-card-title>{{cardTitle}}</mat-card-title>
+      <mat-card-content>
+        <form [formGroup]="addProductForm" (ngSubmit)="submit()">
+          <p>
+            <mat-form-field>
+              <input
+                type="text"
+                matInput
+                placeholder="Name of the product"
+                formControlName="name"
+              />
+            </mat-form-field>
+          </p>
+  
+          <p>
+            <mat-form-field>
+              <input
+                type="text"
+                matInput
+                placeholder="Price of the product"
+                formControlName="price"
+              />
+            </mat-form-field>
+          </p>
+          <div>
+            <mat-form-field appearance="fill">
+              <mat-label>Tell us about the product.</mat-label>
+              <textarea matInput formControlName="description"></textarea>
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field appearance="fill">
+              <mat-label>Select category</mat-label>
+              <mat-select formControlName="category">
+                <mat-option
+                  *ngFor="let category of categories"
+                  [value]="category.value"
+                >
+                  {{ category.viewValue }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+  
+            <hr>
+            <div class="add-button">
+              <button [disabled]="!addProductForm.valid" type="submit" mat-raised-button>{{actionType}}</button>
+            </div>
+          </div>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  
+</div>

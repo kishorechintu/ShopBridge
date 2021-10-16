@@ -1,0 +1,42 @@
+<div class="products-container">
+  <div *ngFor="let product of productsList">
+    <div class="card">
+      <div class="card-img-top">
+        <div class="card-head-logo">{{ product.name | productTitle }}</div>
+      </div>
+      <div class="card-body">
+        <div class="product-title">{{ product.name }}</div>
+        <div style="font-weight: 500;">{{ product.price | currency: "INR":"symbol":"3.0" }}</div>
+        <div class="product-description">{{ product.description }}</div>
+        <hr />
+        <div class="button-container">
+          <div
+            class="btn-group"
+            role="group"
+            aria-label="Basic mixed styles example"
+          >
+            <button
+              type="button"
+              class="btn btn-success"
+              (click)="editProduct(product)"
+            >
+              Edit
+            </button>
+            <button
+              type="button"
+              class="btn btn-danger"
+              (click)="deleteProduct(product.id)"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card" *ngIf="productsList.length === 0">
+    <div class="card-body">
+      <div class="no-products-title">No Products Available...</div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+{
+  "users": [
+    {
+      "email": "kishore.p29@gmail.com",
+      "password": "$2a$10$qXLMTzOFn9j2pICS4pQhPeT90anmwVc5dzX1R1HPkMjTbHZ.wno3e",
+      "id": 1
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "$2a$10$rnWDKa6uUQfO6nO0szVWE.obst6lb7GYPsozzppIHyJbRxtQjjC3e",
+      "id": 2
+    }
+  ],
+  "products": [
+    {
+      "id": 1634378369659,
+      "name": "Samsung Tv",
+      "category": "Electronics",
+      "price": "39999",
+      "description": "Nice Tv"
+    },
+    {
+      "id": 1634382594178,
+      "name": "Laptop",
+      "category": "Electronics",
+      "price": "24000",
+      "description": "Nice Laptop"
+    },
+    {
+      "id": 1634384048686,
+      "name": "Table",
+      "category": "Furniture",
+      "price": "25000",
+      "description": "The table is made of Take wood, with mat-finish."
+    },
+    {
+      "id": 1634384140215,
+      "name": "Nikon Camera",
+      "category": "Gadgets",
+      "price": "78000",
+      "description": "The great camera, with descent lens and latest technology"
+    }
+  ]
+}
