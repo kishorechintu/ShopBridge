@@ -22,7 +22,6 @@ export class ListOfProductsComponent implements OnInit {
     this.sbService.getProducts().subscribe((data) => {
       this.productsList = [...data];
       this.globalProduct = this.productsList;
-      console.log(this.productsList);
     });
   }
 
@@ -33,21 +32,23 @@ export class ListOfProductsComponent implements OnInit {
   }
 
   editProduct(item: PRODUCT_MODEL) {
-    this.router.navigate(['/dashboard/additem', {product: JSON.stringify(item)}])
+    this.router.navigate([
+      '/dashboard/additem',
+      { product: JSON.stringify(item) },
+    ]);
   }
 
   searchProduct() {
-    if(this.productsList.length > 0) {
-      let filteredProducts = []
-      this.productsList.forEach ((item) => {
-        if(item.name.toLowerCase().startsWith(this.searchText.toLowerCase())) {
+    if (this.productsList.length > 0) {
+      let filteredProducts = [];
+      this.productsList.forEach((item) => {
+        if (item.name.toLowerCase().startsWith(this.searchText.toLowerCase())) {
           filteredProducts.push(item);
         }
-      })
+      });
       this.productsList = Object.assign([], filteredProducts);
-    console.log("products List",this.productsList)
+    }
   }
-}
 
   closeSearch() {
     this.searchText = '';

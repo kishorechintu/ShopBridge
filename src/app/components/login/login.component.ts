@@ -58,7 +58,9 @@ export class LoginComponent implements OnInit, OnDestroy {
     }
   }
   openSnackBar() {
-    this._snackBar.open('Invalid user');
+    this._snackBar.open('Invalid user', 'close', {
+      duration: 3000,
+    });
   }
 
   ngOnDestroy() {

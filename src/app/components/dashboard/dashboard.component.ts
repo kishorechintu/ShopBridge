@@ -14,4 +14,8 @@ export class DashboardComponent implements OnInit {
   ngOnInit() {
     this.router.navigate(['dashboard/productslist']);
   }
+  logout() {
+    this.sbService.setAuthState(false);
+    this.router.navigate(['']);
+  }
 }

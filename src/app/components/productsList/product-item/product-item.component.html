@@ -6,7 +6,9 @@
       </div>
       <div class="card-body">
         <div class="product-title">{{ product.name }}</div>
-        <div style="font-weight: 500;">{{ product.price | currency: "INR":"symbol":"3.0" }}</div>
+        <div style="font-weight: 500">
+          {{ product.price | currency: "INR":"symbol":"3.0" }}
+        </div>
         <div class="product-description">{{ product.description }}</div>
         <hr />
         <div class="button-container">

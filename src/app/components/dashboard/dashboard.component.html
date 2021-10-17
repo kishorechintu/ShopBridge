@@ -1,2 +1,5 @@
-<app-navigation *ngIf="sbService.getAuthState()"></app-navigation>
+<app-navigation
+  *ngIf="sbService.getAuthState()"
+  (logoutevent)="logout()"
+></app-navigation>
 <router-outlet></router-outlet>

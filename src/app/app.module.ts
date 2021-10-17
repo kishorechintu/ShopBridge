@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { ProductItemComponent } from './components/productsList/product-item/product-item.component';
-import { CartListComponent } from './components/productsList/cart-list/cart-list.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { MaterialModule } from './material/material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -21,7 +20,6 @@ import { ProductTitlePipe } from './pipes/product-title.pipe';
     AppComponent,
     NavigationComponent,
     ProductItemComponent,
-    CartListComponent,
     DashboardComponent,
     LoginComponent,
     AddProductComponent,

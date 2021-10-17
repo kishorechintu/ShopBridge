@@ -27,7 +27,6 @@ export class AddProductComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    console.log(this.addProductForm)
     this.cardTitle = 'Add Product';
     this.actionType = 'Add';
     this.route.paramMap.subscribe((params: ParamMap) => {
@@ -83,20 +82,16 @@ export class AddProductComponent implements OnInit {
         this.addProductForm.controls.description.value
       )
       .subscribe(() => {
-        
-        console.log(this.addProductForm)
+        this.router.navigate(['dashboard/productslist']);
         this.addProductForm.reset();
-        this.router.navigate(['dashboard/productslist'])
-        // Object.keys(this.addProductForm.controls).forEach((key) => {
-        //   const control = this.addProductForm.controls[key];
-        //   control.markAsPristine();
-        //   control.markAsUntouched();
-        // });
+        setTimeout(() => {
+          this.addProductForm.markAllAsTouched();
+          this.addProductForm.markAsPristine();
+        }, 2000);
       });
   }
 
   addProduct() {
-    console.log('adding');
     this.sbService
       .addProduct(
         this.addProductForm.controls.name.value,
@@ -104,11 +99,14 @@ export class AddProductComponent implements OnInit {
         this.addProductForm.controls.category.value,
         this.addProductForm.controls.description.value
       )
-      .subscribe((data) => {
-        console.log('data saved', data);
+      .subscribe(() => {
         this.productAddState = true;
         this.addProductForm.reset();
-        this.addProductForm.markAllAsTouched();
+        setTimeout(() => {
+          this.addProductForm.markAllAsTouched();
+          this.addProductForm.markAsPristine();
+        }, 2000);
+
         setTimeout(() => {
           this.productAddState = false;
         }, 2000);

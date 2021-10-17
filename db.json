@@ -20,18 +20,18 @@
       "id": 1634378369659
     },
     {
-      "id": 1634382594178,
       "name": "Laptop",
       "category": "Electronics",
-      "price": "24000",
-      "description": "Nice Laptop"
+      "price": "32200",
+      "description": "Nice Laptop",
+      "id": 1634382594178
     },
     {
-      "id": 1634384048686,
       "name": "Table",
       "category": "Furniture",
-      "price": "25000",
-      "description": "The table is made of Take wood, with mat-finish."
+      "price": "10000",
+      "description": "The table is made of Take wood, with mat-finish.",
+      "id": 1634384048686
     },
     {
       "name": "Nikon Camera",
@@ -43,16 +43,23 @@
     {
       "name": "Watch",
       "category": "Gadgets",
-      "price": "5000",
+      "price": "4500",
       "description": "Its new watch",
       "id": 1634393001602
     },
     {
-      "id": 1634393127600,
-      "name": "New ",
+      "id": 1634395637860,
+      "name": "Sofa set",
+      "category": "Furniture",
+      "price": "24000",
+      "description": "well cusioned sofa set"
+    },
+    {
+      "name": "Torch",
       "category": "Electronics",
-      "price": "32222",
-      "description": "New Product"
+      "price": "1000",
+      "description": "Improved torch light",
+      "id": 1634454460322
     }
   ]
 }

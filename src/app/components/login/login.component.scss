@@ -1,21 +1,14 @@
-// :host {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   margin: 100px 0px;
-// }
-
-.wrapper{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
-.mat-progress-bar{
-    position: absolute;
-    top: 0px;
+.mat-progress-bar {
+  position: absolute;
+  top: 0px;
 }
 
 .mat-form-field {

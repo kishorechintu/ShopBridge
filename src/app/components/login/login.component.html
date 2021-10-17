@@ -1,5 +1,8 @@
 <div class="wrapper" *ngIf="!sbService.getAuthState()">
-    <mat-progress-bar *ngIf="authenticating" mode="indeterminate"></mat-progress-bar>
+  <mat-progress-bar
+    *ngIf="authenticating"
+    mode="indeterminate"
+  ></mat-progress-bar>
   <mat-card>
     <mat-card-title>Shop Bridge</mat-card-title>
     <mat-card-content>
@@ -31,12 +34,14 @@
         </p>
 
         <div class="button">
-          <button [disabled]="!loginForm.valid" type="submit" mat-button>Login</button>
+          <button [disabled]="!loginForm.valid" type="submit" mat-button>
+            Login
+          </button>
         </div>
       </form>
     </mat-card-content>
   </mat-card>
 </div>
 <ng-container *ngIf="sbService.getAuthState()">
-  <router-outlet ></router-outlet>
+  <router-outlet></router-outlet>
 </ng-container>

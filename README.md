@@ -17,10 +17,21 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Instruction to Run the Project
 1) clone the repo
-2) install the dependies using "npm install" command.
-3) start the json server using the below command
+    https://github.com/kishorechintu/ShopBridge.git
+
+2) checkout to master branch
+    "git checkout master"
+
+3) install the dependies using "npm install" command.
+
+4) install Json server 
+    "npm install -g json-server json-server-auth"
+
+5) start the json server using the below command
     json-server db.json -m ./node_modules/json-server-auth
-4) start the project using "ng serve --o"
-5) credentials to login
+
+6) start the project using "ng serve --o"
+
+7) credentials to login
     username: admin@gmail.com
     password: Adminadmin123
